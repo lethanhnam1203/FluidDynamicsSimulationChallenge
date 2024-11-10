@@ -22,11 +22,11 @@ Based on the three datasets `train_dataset, val_dataset, `test_dataset`, we impl
 
 ## Step 2: Model
 
-Implement all the time-series models that were mentioned in the research proposal for time sereis prediction
+Implement all the time-series models that were mentioned in the research proposal for time sereis prediction. Many models can be imported from pytorch
 
-- RNN
-- GRU
-- LSTM
+- [RNN](https://pytorch.org/docs/stable/generated/torch.nn.RNN.html)
+- [GRU](https://pytorch.org/docs/stable/generated/torch.nn.GRU.html#torch.nn.GRU)
+- [LSTM](https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html#torch.nn.LSTM)
 - TCN
 - Transformer
 
