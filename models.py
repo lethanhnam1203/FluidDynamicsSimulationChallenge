@@ -7,7 +7,7 @@ from torch.nn import RNN, LSTM, GRU, MSELoss, Transformer
 
 
 class ThaiRNN(nn.Module):
-    def __init__(self, initial_values_size: int, hidden_size: int, num_layers: int=1, input_size:int=1, output_size: int=1):
+    def __init__(self, initial_values_size: int=5, hidden_size: int=64, num_layers: int=1, input_size:int=1, output_size: int=1):
         """
         Args:
             initial_values_size (int): Number of initial values.
@@ -45,7 +45,7 @@ class ThaiRNN(nn.Module):
     
 
 class NamRNN(nn.Module):
-    def __init__(self, initial_values_size: int, hidden_size: int, num_layers: int=1, input_size:int=1, output_size: int=1):
+    def __init__(self, initial_values_size: int=5, hidden_size: int=64, num_layers: int=1, input_size:int=1, output_size: int=1):
         """
         Args:
             initial_values_size (int): Number of initial values.
