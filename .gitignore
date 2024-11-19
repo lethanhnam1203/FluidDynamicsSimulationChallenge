@@ -1,1 +1,5 @@
 aggregate.csv
+__pycache__/*
+.idea/*
+logs/*
+models/*
