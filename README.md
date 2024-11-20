@@ -2,22 +2,29 @@
 Using neural networks to solve a simulation problem in fluid dynamics
 
 
-## Step 1: Data 
-Done
-## Step 2: Model
+## Create a virtual environment
 
-Implement all the time-series models that were mentioned in the research proposal for time sereis prediction. Many models can be imported from pytorch
+We use python version 3.11.9
 
-- [x] [RNN](https://pytorch.org/docs/stable/generated/torch.nn.RNN.html)
-- [GRU](https://pytorch.org/docs/stable/generated/torch.nn.GRU.html#torch.nn.GRU)
-- [LSTM](https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html#torch.nn.LSTM)
-- TCN: there is no direct implementation in pytorch but from [this library](https://pypi.org/project/pytorch-tcn/) or we can implement ouselves using [Conv1d](https://pytorch.org/docs/stable/generated/torch.nn.Conv1d.html) from pytorch
-- [Full Transformer](https://pytorch.org/docs/stable/generated/torch.nn.Transformer.html#torch.nn.Transformer) and [Transformer Encoder](https://pytorch.org/docs/stable/generated/torch.nn.TransformerEncoderLayer.html#torch.nn.TransformerEncoderLayer)
+After having the right python version, create a new virtual environment (in our case named `thai`) and activate it.
+Then install the necessary packages listed in `requirements.txt`
 
-## Step 3
-Done
+```bash
+python -m venv thai
+source thai/bin/activate
+pip install -r requirements.txt
+```
 
+## Run models
 
-## Others
-- Also try (shallow) machine learning methods and compare their performance to neural network methods.
-- Use tensorboard and logging to record each model's performance and training history.
+Execute the bash script `run_model.sh` at root.
+
+```bash
+./run_models.sh
+```
+
+If there is any permission error related to this bash script, you may need to grant execute permissiosn via:
+
+```bash
+chmod +x run_models.sh
+```
