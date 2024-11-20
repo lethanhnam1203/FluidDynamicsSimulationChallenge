@@ -3,3 +3,5 @@ __pycache__/*
 .idea/*
 logs/*
 models/*
+.python-version
+thai/
